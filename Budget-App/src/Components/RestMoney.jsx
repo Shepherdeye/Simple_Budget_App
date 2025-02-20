@@ -2,7 +2,7 @@ import React from 'react'
 import { useBudgetData } from '../Context/ContextApp';
 
 const RestMoney = () => {
-    const { budget, expenses } = useBudgetData();
+    const { expenses } = useBudgetData();
     const restMoney = expenses.reduce((total, item) => {
         return total = total + item.cost
     }, 0)
