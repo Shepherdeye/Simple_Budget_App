@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { useBudgetData } from '../Context/ContextApp';
 
 const AddExpensis = () => {
-    const { dispatch, expenses } = useBudgetData();
+    const { dispatch } = useBudgetData();
     const [name, setName] = useState("");
     const [amount, setAmount] = useState(0);
     const handleSubmit = (e) => {
